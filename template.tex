@@ -1,0 +1,99 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{listings} % 引入宏包
+\usepackage{xcolor}   % 引入颜色宏包，用于代码块着色
+\usepackage{titlesec}  % 用于自定义标题格式
+
+\geometry{a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm}
+% 自定义一级标题的格式，左对齐，中文数字编号
+\titleformat{\section}
+  {\normalfont\Large\bfseries}  % 标题的字体、大小和粗体
+  {\chinese{section}、}         % 自动生成中文编号（如一、二、三）
+  {0em}                        % 编号与标题文字之间的间距
+  {}                           % 标题前缀
+
+
+\begin{document}
+\lstset{                    % 设置代码显示风格
+    language=Verilog,        % 代码语言
+    basicstyle=\ttfamily,   % 基本字体设置
+    keywordstyle=\color{blue},  % 关键字颜色
+    commentstyle=\color{green}, % 注释颜色
+    stringstyle=\color{red},    % 字符串颜色
+    showstringspaces=false, % 不显示空格符
+}
+\pagestyle{empty}
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{./image.png}
+\end{center}
+\vspace{1.8cm}
+
+\begin{center}
+    \zihao{2} \bf{本科实验报告}
+\end{center}
+
+\vspace{2.2cm}
+
+\begin{center}
+    \zihao{-3}
+    \begin{tabular}{rl}
+    课程名称 & : \underline{\makebox[8cm]{计算机组成}} \\
+    \vspace{0.15cm} & \\
+    姓\hspace{2em}名 & : \underline{\makebox[8cm]{某某某}} \\
+    \vspace{0.15cm} & \\
+    学\hspace{2em}院 & : \underline{\makebox[8cm]{计算机学院}} \\
+    \vspace{0.15cm} & \\
+    系 & : \underline{\makebox[8cm]{计算机科学与技术系}} \\
+    \vspace{0.15cm} & \\
+    专\hspace{2em}业 & : \underline{\makebox[8cm]{计算机科学与技术}} \\
+    \vspace{0.15cm} & \\
+    学\hspace{2em}号 & : \underline{\makebox[8cm]{xxxxxxxxxx}} \\
+    \vspace{0.15cm} & \\
+    指导教师 & : \underline{\makebox[8cm]{某某}}
+    \end{tabular}
+\end{center}
+
+\vspace{1.8cm}
+\begin{center}
+    \zihao{-3}
+    2024 年 13 月 32 日
+\end{center}
+\vspace{1cm}
+
+
+\newpage
+\begin{center}
+    \zihao{3} \bf 浙江大学实验报告
+\end{center}
+\vspace{1cm}
+\zihao{-4}
+\noindent 课程名称: \underline{\makebox[5cm]{计算机组成}} 
+实验类型: \underline{\makebox[5cm]{FPGA实验}} \\[0.4cm] 
+实验项目名称: \underline{\makebox[11.3cm]{实验项目名称}} \\[0.4cm] 
+学生姓名: \underline{\makebox[2cm]{某某某}} 
+专业: \underline{\makebox[4.6cm]{计算机科学与技术}} 
+学号: \underline{\makebox[3cm]{xxxxxxxxxx}} \\[0.4cm]
+同组学生姓名: \underline{\makebox[4.2cm]{无}} 
+指导老师: \underline{\makebox[5cm]{某某}} \\[0.4cm]
+实验地点: \underline{\makebox[5cm]{实验地点}} 
+实验日期: \underline{\makebox[1.4cm]{2024}} 年 \underline{\makebox[0.9cm]{13}} 月 \underline{\makebox[0.9cm]{32}} 日
+
+\vspace{1.5cm}
+
+\section{实验目的和要求}
+
+\section{实验内容和原理}
+
+\section{主要仪器设备}
+
+\section{操作方法与实验步骤}
+
+\section{实验数据记录和处理}
+
+\section{实验结果与分析}
+
+\section{讨论、心得}
+
+\enddocument
